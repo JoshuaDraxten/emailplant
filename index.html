@@ -1,0 +1,74 @@
+<html>
+	<head>
+		<style type="text/css">
+			a{
+				color:black;
+    			text-decoration: none;
+			}
+			#choice-container{
+				position: absolute;
+				width:600px;
+				left: 50%;
+				margin-top: 80px;
+				margin-left: -300px;
+			}
+			.choiceText{
+
+				font-family: helvetica;
+				margin-top: -90px;
+				margin-left: 100px;
+				font-size: 80px;
+				font-weight: 100;
+			}
+			.choiceText:hover{
+				color:#444;
+			}
+			.choiceImage{
+				display: inline;
+				width:100%;
+			}
+			.choiceName{
+				margin-bottom: -10px;
+			}
+			div#choice-container > h1{
+				font-family: helvetica;
+				font-weight: 100;
+				font-size: 80px;
+			}
+			#navbar{
+				margin: -8px;
+				position: absolute;
+				width:100%;
+				height:80px;
+				background-color: #3498db;
+				border-bottom-color: #2980b9;
+				border-bottom-style: solid;
+				border-bottom-width: 4px;
+			}
+			#navbar h2{
+				font-family: helvetica;
+				color:#040404;
+				margin-left: 20px;
+				margin-top: 25px;
+			}
+		</style>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	</head>
+	<body>
+		<nav id="navbar">
+			<h2 id="progress"><span>Color ></span><span> Header > </span><span>Body > </span><span>Footer > </span><span>Preview</span></h2>
+		</nav>
+		<div id="choice-container">
+			<h1 id="choiceName">Choose a theme</h1>
+			<table>
+			<tr id="choice">
+				<br><br>
+				<td><a href="javascript:void(0);" onclick="nextChoice();"><h2 class="choiceText"></h2></a>
+				<br><br>
+				<a href="javascript:void(0);" onclick="nextChoice();"><h2 class="choiceText">Light</h2></a></td>
+			</tr>
+			</table>
+		</div>
+		<script type="text/javascript" src="menu.js"></script>
+	</body>
+</html>
