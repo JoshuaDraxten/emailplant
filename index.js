@@ -41,3 +41,4 @@ function nextChoice(choice){
 	});
 	$("#choice-container").animate({opacity:1},1000);
 }
+nextChoice();
