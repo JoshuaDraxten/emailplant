@@ -36,7 +36,7 @@ function nextChoice(choice){
 								 					    '<a href="javascript:void(0);" onclick="nextChoice(1);"><img class="choiceImage" src="'+choices[n][1]+'"></a></td>';
 			
 		} else {
-			document.write('<body style="background-color:#f1eae0;"><style>'+css_output+'</style><table width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td width="600px" align="center"><table style="width:600px;background-color:#f3f3f3;">'+html_output+'</table></td></tr></table></body>')
+			document.write('<head><style>'+css_output+'</style></head><body style="background-color:#f1eae0;"><table width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td width="600px" align="center"><table style="width:600px;background-color:#f3f3f3;">'+html_output+'</table></td></tr></table></body>')
 		}
 	});
 	$("#choice-container").animate({opacity:1},1000);
